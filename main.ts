@@ -10,7 +10,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             random + 100,
             165,
             0,
-            116,
+            100,
             SoundExpressionEffect.None,
             InterpolationCurve.Logarithmic
             ), SoundExpressionPlayMode.InBackground)
@@ -27,7 +27,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             random + -300,
             165,
             0,
-            116,
+            100,
             SoundExpressionEffect.None,
             InterpolationCurve.Logarithmic
             ), SoundExpressionPlayMode.InBackground)
@@ -44,7 +44,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             random + -800,
             165,
             0,
-            116,
+            100,
             SoundExpressionEffect.None,
             InterpolationCurve.Logarithmic
             ), SoundExpressionPlayMode.InBackground)
@@ -53,9 +53,11 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onButtonPressed(Button.A, function () {
     ringing = 0
+    radio.sendNumber(420)
 })
 input.onButtonPressed(Button.B, function () {
     ringing = 0
+    radio.sendNumber(420)
 })
 let random = 0
 let ringing = 0
